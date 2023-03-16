@@ -1,4 +1,4 @@
-# eos_chatting
+# eos_clock
 
 A new Flutter project.
 
