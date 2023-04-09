@@ -118,7 +118,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
               content: Text('회원가입 완료'),
               backgroundColor: Colors.blue,
             ));
-            Navigator.pop(context);
+            // Navigator.pop(context);
           }
           return value;
         });

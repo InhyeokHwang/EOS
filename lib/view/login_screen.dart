@@ -1,3 +1,4 @@
+import 'package:eos_clock/view/home_screen.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 
@@ -117,7 +118,10 @@ class _LoginScreenState extends State<LoginScreen> {
         await _auth.signInWithEmailAndPassword(
             email: _emailController.text, password: _passwordController.text);
 
-        Navigator.pushNamedAndRemoveUntil(context, '/home', (route) => false);
+        Navigator.pushAndRemoveUntil(
+            context,
+            MaterialPageRoute(builder: (context) => HomeScreen()),
+            (route) => false);
       } on FirebaseAuthException catch (e) {
         String message = '';
 
