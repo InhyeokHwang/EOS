@@ -1,4 +1,4 @@
-import 'package:eos_chatting/widget/clock_widget.dart';
+import 'package:eos_clock/widget/clock_widget.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatelessWidget {
